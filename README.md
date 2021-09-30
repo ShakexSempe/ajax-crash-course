@@ -13,3 +13,13 @@ vanilla javascript AJAX fundementals: presented by Brad Traversy
     // 3: processing request
     // 4: request finished and response is ready
 
+<!-- asynchronous request -->
+## create request
+    new XMLHttpRequest();
+        constructor has no arguments
+
+## initialize: open() 
+### .open(method, url, async)
+- open() configures request,
+- network activity starts with call of send();
+<!-- end of asynchronous request -->
