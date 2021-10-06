@@ -12,7 +12,16 @@ loadUser = () => {
         if(xhr.status === 200) {
             const user = JSON.parse(xhr.responseText);
             console.log(user.name);
-            console.log(xhr.responseText);
+
+            // ES5 method
+            let output = '';
+            output += '<ul>' +
+                '<li>ID: '+user.id+'</li>' +
+                '<li>Name: '+user.id+'</li>' +
+                '<li>Email: '+user.email+'</li>' +
+                '</ul>';
+            document.getElementById('user').innerHTML = output;
+            // end of ES5 method
         }
     }
 
